@@ -13,8 +13,8 @@ public class ConvertKilometersToMiles {
   System.ot.println("Please enter the Kilometers:"); //Took the input
   br = new BufferedReader(new InputStreamReader(System.in));
   Float kms = Float.parseFloat(br.readLine()); //Kilometers value picked up from input  
-  miles= kms * 1.60934F ; // kms to miles conversion
-  System.out.println("Kilometers: "+miles)
+  miles= kms * 0.621371F ; // kms to miles conversion
+  System.out.println("Miles: "+miles)
   
     }
   
