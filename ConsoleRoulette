@@ -32,7 +32,12 @@ Public class Bet {
         default:
           return Optional.empty();
         
-          }
-        
+          } 
+          
         }
+        
+        private Optional<BigDecimal> multiplyWinnings(Optional<BigDecimal> winnings, BigDecimal multiplier) {
+            return winnings.map(amount-> amount.multiply(multiplier));
+            }
+    
     
