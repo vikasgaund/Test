@@ -9,5 +9,10 @@ public class ConvertKelvinToCelcius {
   public static void main (String[] agrs) throws NumberFormatException, IOException {
   
   BufferedReader br; //Reader declared
-  System.ot.println()
+  System.ot.println("Please enter the Temparature in Kelvin:"); //Took the input
+  br = new BufferedReader(new InputStreamReader(System.in));
+  Float kelvin = Float.parseFloat(br.readLine()); //kelvin variable declared
+  
+  
+  
   
