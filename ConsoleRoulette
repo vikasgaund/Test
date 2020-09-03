@@ -13,3 +13,8 @@ Public class Bet {
   private final Tyoe type;
   private static final AtomicReference<BigDecimal>> winnings = new AtomicReference<>(Optional.empty());
   private static final AtomicReference<BigDecimal>> outcome = new AtomicReference<>(Optional.empty());
+
+    public Bet(Optional<Integer> betnumber, bigDecimal betAmount, type type) {
+    this.betNumber = betNumber;
+    this.betAmount= betAmount;
+    this.type=type;
