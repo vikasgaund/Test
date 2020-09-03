@@ -1,11 +1,15 @@
-/* Programme or Service to convert Miles to Kilimeters , We can call the same method from Service or API to get return converted distance */
+/* Programme or Service to convert Miles to Kilometers , We can call the same method from Service or API to get return converted distance */
 
 import java.io.BufferedReader;
 import java.io.JavaIOException;
-@@ -13,7 +13,7 @@ public class ConvertCelciusToKelvin {
-  System.ot.println("Please enter the Temparature in Celsius:"); //Took the input
+
+public class ConvertMilestoKilometers {
+
+  Float kms=o; //Kilometers declared 0 initially
+  System.ot.println("Please enter the Miles:"); //Took the input
   br = new BufferedReader(new InputStreamReader(System.in));
-  Float celsius = Float.parseFloat(br.readLine()); //Celsius value picked up from input  
-  kelvin = celsius + 273.15F ; // kelvin to celcius conversion
-  kelvin = celsius + 273.15F ; // celcius to kelvin conversion
+  Float miles = Float.parseFloat(br.readLine()); //Miles value picked up from input  
+  kms = miles * 273.15F ; // kelvin to celcius conversion
   System.out.println("Kelvin: "+kelvin)
+  
+  }
