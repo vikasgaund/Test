@@ -9,7 +9,7 @@ public class ConvertMilestoKilometers {
   System.ot.println("Please enter the Miles:"); //Took the input
   br = new BufferedReader(new InputStreamReader(System.in));
   Float miles = Float.parseFloat(br.readLine()); //Miles value picked up from input  
-  kms = miles * 273.15F ; // kelvin to celcius conversion
-  System.out.println("Kelvin: "+kelvin)
+  kms = miles * 1.60934F ; // Miles to Kilometers conversion
+  System.out.println("Kilometers: "+kms)
   
   }
