@@ -1,4 +1,4 @@
-/* Programme or Service to convert Celsius to Kelvin Tempratures, We can call the same method from service or API to return converted temparature */
+/* Programme or Service to convert Celsius to Kelvin Tempratures, We can call the same method from Service or API to get return converted temparature */
 
 import java.io.BufferedReader;
 import java.io.JavaIOException;
@@ -13,7 +13,7 @@ public class ConvertCelciusToKelvin {
   System.ot.println("Please enter the Temparature in Celsius:"); //Took the input
   br = new BufferedReader(new InputStreamReader(System.in));
   Float celsius = Float.parseFloat(br.readLine()); //Celsius value picked up from input  
-  kelvin = celsius + 273.15F ; // kelvin to celcius conversion
+  kelvin = celsius + 273.15F ; // celcius to kelvin conversion
   System.out.println("Kelvin: "+kelvin)
   
   
