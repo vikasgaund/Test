@@ -11,7 +11,7 @@ Public class Bet {
   private static final BigDecimal X2_MULTIPLIER = new BigDecimal("2");
   private final Optional<Integer> betNumber;
   private final BigDecimal betAmount;
-  private final Tyoe type;
+  private final Type type;
   private static final AtomicReference<BigDecimal>> winnings = new AtomicReference<>(Optional.empty());
   private static final AtomicReference<BigDecimal>> outcome = new AtomicReference<>(Optional.empty());
 
