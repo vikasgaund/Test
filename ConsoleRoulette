@@ -49,6 +49,30 @@ Public class Bet {
         return betNumber;
      }
      
+     public Type getType() {
+        return type;
+     }
+     
+     public AtomicReference<Optional<BigDecimal>> getWinnings() {
+        return winnings;
+     }
+     
+     public AtomicReference<Optional<Outcome>> getOutcome() {
+        return outcome;
+     }
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
      
   
     
