@@ -2,14 +2,20 @@
 
 import java.io.BufferedReader;
 import java.io.JavaIOException;
+import java.io.InputStreamReader;
 
-public class ConvertMilestoKilometers {
+public class ConvertMilesToKilometers {
 
-  Float kms=o; //Kilometers declared 0 initially
+  public static void main (String[] agrs) throws NumberFormatException, IOException {
+
+   Float kms = 0; //Kilometers declared 0 initialy 
+  BufferedReader br; //Reader declared
   System.ot.println("Please enter the Miles:"); //Took the input
   br = new BufferedReader(new InputStreamReader(System.in));
-  Float miles = Float.parseFloat(br.readLine()); //Miles value picked up from input  
-  kms = miles * 1.60934F ; // Miles to Kilometers conversion
+  Float miles = Float.parseFloat(br.readLine()); //kelvin value picked up from input  
+  kms= miles * 1.60934F ; // kms to miles conversion
   System.out.println("Kilometers: "+kms)
+  
+    }
   
   }
