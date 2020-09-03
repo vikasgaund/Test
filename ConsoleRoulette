@@ -1,5 +1,9 @@
 /* Console Roulette program */
 
 import.java.math.BigDecimal;
-import.util.Optional;
+import java.util.Optional;
+import java.util.concurrent.atomic.AtomicReference;
+
+Public class Bet {
+
 
