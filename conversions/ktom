@@ -1,0 +1,21 @@
+/* Programme or Service to convert Kilometers to Miles , We can call the same method from Service or API to get return converted distance */
+
+import java.io.BufferedReader;
+import java.io.JavaIOException;
+import java.io.InputStreamReader;
+
+public class ConvertKilometersToMiles {
+
+  public static void main (String[] agrs) throws NumberFormatException, IOException {
+
+  Float miles = 0; //Miles declared 0 initialy 
+  BufferedReader br; //Reader declared
+  System.ot.println("Please enter the Kilometers:"); //Took the input
+  br = new BufferedReader(new InputStreamReader(System.in));
+  Float kms = Float.parseFloat(br.readLine()); //Kilometers value picked up from input  
+  miles= kms * 1.60934F ; // kms to miles conversion
+  System.out.println("Kilometers: "+miles)
+  
+    }
+  
+  }
