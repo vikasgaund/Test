@@ -23,6 +23,16 @@ Public class Bet {
     
     public Optional<BigDecimal> GetWinnings(int number) {
     switch (type) {
-      case Number:
-        return multiplyWinnings(betNumber.filter(n->n == number)).map(n->betAmount), X36_MULTIPLIER);
+        case Number:
+          return multiplyWinnings(betNumber.filter(n->n == number)).map(n -> betAmount), X36_MULTIPLIER);
+        case ODD:
+          return multiplyWinnings(Optional.of(betAmount)).filter(amount -> number % 2 !=0), X2_MULTIPLIER);
+        case EVEN:
+          return multiplyWinnings(Optional.of(betAmount)).filter(amount -> number % 2 ==0), X2_MULTIPLIER);
+        default:
+          return Optional.empty();
+        
+          }
+        
+        }
     
