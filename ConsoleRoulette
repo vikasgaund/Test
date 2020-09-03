@@ -1,4 +1,5 @@
-/* Console Roulette program */
+/* Console Roulette generic program for any number of players, inputs we can enter from console window */
+/* With passing necessary inputs i.e. player details 'Tiki_Monkey' &'Barbara' in console window, please call this method from Service/API to get necessary Roulette game output */
 
 import.java.math.BigDecimal;
 import java.util.Optional;
