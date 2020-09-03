@@ -18,3 +18,11 @@ Public class Bet {
     this.betNumber = betNumber;
     this.betAmount= betAmount;
     this.type=type;
+    
+    }
+    
+    public Optional<BigDecimal> GetWinnings(int number) {
+    switch (type) {
+      case Number:
+        return multiplyWinnings(betNumber.filter(n->n == number)).map(n->betAmount), X36_MULTIPLIER);
+    
