@@ -36,8 +36,19 @@ Public class Bet {
           
         }
         
-        private Optional<BigDecimal> multiplyWinnings(Optional<BigDecimal> winnings, BigDecimal multiplier) {
+     private Optional<BigDecimal> multiplyWinnings(Optional<BigDecimal> winnings, BigDecimal multiplier) {
             return winnings.map(amount-> amount.multiply(multiplier));
-            }
+           
+        }
     
+     public BigDecimal getBetAmount() {
+        return betAmount;
+     }
+     
+     public Optional<Integer> getBetnumber() {
+        return betNumber;
+     }
+     
+     
+  
     
