@@ -6,4 +6,7 @@ import java.util.concurrent.atomic.AtomicReference;
 
 Public class Bet {
 
-
+  private static final BigDecimal X36_MULTIPLIER = new BigDecimal("36");
+  private static final BigDecimal X2_MULTIPLIER = new BigDecimal("2");
+  private final Optional<Integer> betNumber;
+  private final BigDecimal betAmount;
