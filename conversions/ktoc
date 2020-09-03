@@ -1,4 +1,4 @@
-/* Programme/Service to convert Kelvin to Celcius Tempratures */
+/* Programme or Service to convert Kelvin to Celsius Tempratures, We can call the same method from service or API to return converted temparature */
 
 import java.io.BufferedReader;
 import java.io.JavaIOException;
@@ -8,11 +8,12 @@ public class ConvertKelvinToCelcius {
 
   public static void main (String[] agrs) throws NumberFormatException, IOException {
   
+  Float celsius = 0; //celsius declared 0 initialy 
   BufferedReader br; //Reader declared
   System.ot.println("Please enter the Temparature in Kelvin:"); //Took the input
   br = new BufferedReader(new InputStreamReader(System.in));
-  Float kelvin = Float.parseFloat(br.readLine()); //kelvin variable declared
-  
-  
+  Float kelvin = Float.parseFloat(br.readLine()); //kelvin value picked up from input  
+  celsius= kelvin- 273.15F ; // kelvin to celcius conversion
+  System.out.println("Celcius: "+celsius)
   
   
